@@ -24,4 +24,5 @@ app.get('/:shortId',async (req,res)=>{
   res.redirect(entry.redirectUrl)
 })
 
+app.get('/',(req,res)=>res.send('hello'));
 app.listen(PORT,()=>console.log(`http://localhost:${PORT}`))
